@@ -1,0 +1,14 @@
+﻿<Window x:Class="open_food_apps.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:open_food_apps"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        ResizeMode="CanMinimize"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid Background="#6652648E">
+        <Frame x:Name="frameMain"/>
+    </Grid>
+</Window>

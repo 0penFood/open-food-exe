@@ -1,0 +1,80 @@
+﻿<Page x:Class="open_food_apps.Pages.CreateUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:open_food_apps.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="CreateUserPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="txt_tst" Content="Create User Page" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48"/>
+
+        <Grid Grid.Row="1" Grid.Column="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="FirstName" Grid.Row="0" FontSize="24"/>
+            <TextBox x:Name="txtbox_firstname" Grid.Row="1" FontSize="24" TextAlignment="Center"/>
+            <Label Content="LastName" Grid.Row="2" FontSize="24"/>
+            <TextBox x:Name="txtbox_lastname" Grid.Row="3" FontSize="24" TextAlignment="Center"/>
+            <Label Content="Email" Grid.Row="4" FontSize="24"/>
+            <TextBox x:Name="txtbox_email" Grid.Row="5" FontSize="24" TextAlignment="Center"/>
+        </Grid>
+        
+        <Grid Grid.Row="1" Grid.Column="2" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Phone" Grid.Row="0" FontSize="24"/>
+            <TextBox x:Name="txtbox_phone" Grid.Row="1" FontSize="24" TextAlignment="Center"/>
+            <Label Content="Account type" Grid.Row="2" FontSize="24"/>
+            <ComboBox x:Name="cbxbox_acType" Grid.Row="3" FontSize="24">
+                <ComboBoxItem IsSelected="True" >User</ComboBoxItem>
+                <ComboBoxItem>Restaurant</ComboBoxItem>
+                <ComboBoxItem>Drivers</ComboBoxItem>
+                <ComboBoxItem>Admin</ComboBoxItem>
+            </ComboBox>
+            <Label Content="Password" Grid.Row="4" FontSize="24"/>
+            <PasswordBox x:Name="txtbox_password" Grid.Row="5" FontSize="24"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="3" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="btn_createuser_create" Grid.Column="0" Grid.Row="0" Content="Create" FontSize="24" Click="btn_createuser_create_Click"/>
+        </Grid>
+    </Grid>
+</Page>
